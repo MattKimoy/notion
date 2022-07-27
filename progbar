@@ -1,0 +1,1 @@
+slice("●●●●●●●●●●", 0, floor(10 * prop("completed") / prop("total in series"))) + slice("○○○○○○○○○○", 0, 10 - floor(10 * prop("completed") / prop("total in series"))) + " " + if(prop("completed") == 0, "0", format(round(prop("completed") / prop("total in series") * 100))) + "%"
